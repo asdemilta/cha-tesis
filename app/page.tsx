@@ -86,7 +86,7 @@ export default function Home() {
                   ['Ubicación', 'Charlone 1116, Chacarita'],
                   ['Lote', '5 parcelas · ~750 m²'],
                   ['Altura máx.', '14.60 m · 4 plantas + SS'],
-                  ['Unidades', '13 UF residenciales'],
+                  ['Unidades', '40 UF residenciales'],
                   ['Planta baja', 'Gym · Gastronomía · Cowork'],
                 ].map(([k, v]) => (
                   <div key={k} className="flex justify-between gap-4 border-b border-[#2e2b26] pb-3">
@@ -110,11 +110,11 @@ export default function Home() {
           <div>
             <p className="uppercase tracking-widest text-xs text-[#8a7d6b] mb-6" style={{ fontFamily: 'sans-serif' }}>01 · Proyecto</p>
             <h3 className="text-4xl md:text-5xl font-light leading-tight mb-8">
-              Arquitectura con logica residencial <br />Staci e Urquiza <br />Catedra Benitez
+              Arquitectura con logica residencial <br />en el nuevo polo de desarrollo urbano de Buenos Aires
             </h3>
             <div className="w-16 h-px bg-[#c8bfb0] mb-8" />
             <p className="text-[#5a5248] text-sm uppercase tracking-widest" style={{ fontFamily: 'sans-serif' }}>
-              Tesis · Proyecto y Construcción de Obras
+              TIF-Demilta-cH°a-2026 
             </p>
           </div>
           <div className="space-y-6 text-[#4a4238] leading-relaxed text-lg pt-4">
@@ -132,7 +132,7 @@ export default function Home() {
               es constante: esas sensaciones que se obtienen recorriendo lo natural y también la arquitectura.
             </p>
             <div className="grid grid-cols-3 gap-4 pt-4">
-              {[['Brutal'], ['Contemplativo'], ['8', 'Unidades']].map(([n, l]) => (
+              {[['Brutal'], ['Atemporal'], ['40', 'Unidades']].map(([n, l]) => (
                 <div key={l} className="border border-[#c8bfb0] rounded-2xl p-5 text-center bg-white/70 backdrop-blur-sm">
                   <div className="text-3xl font-light mb-1">{n}</div>
                   <div className="text-xs uppercase tracking-widest text-[#8a7d6b]" style={{ fontFamily: 'sans-serif' }}>{l}</div>
