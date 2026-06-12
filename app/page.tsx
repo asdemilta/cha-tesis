@@ -3,17 +3,18 @@ export default function Home() {
 
   const plantas = [
     { nivel: 'Subsuelo', desc: 'Cocheras en subsuelo con pisada total del lote. El sector no edificable en altura se convierte en techo verde contemplativo desde planta baja.', tag: 'Infraestructura' },
-    { nivel: 'Planta Baja', desc: 'Ecosistema de servicios compartidos. Ingreso peatonal fusionado con amenities, gym (150 m²), local gastronómico en esquina (150 m²) y coworking (55 m²).', tag: 'Activación Urbana' },
+    { nivel: 'Planta Baja', desc: 'Ecosistema de servicios compartidos. Ingreso peatonal fusionado con amenities, gym (150 m²), local gastronómico en esquina (200 m²) y coworking (55 m²).', tag: 'Sector Urbano' },
     { nivel: 'Piso 1', desc: 'Unidades funcionales tipo A y B. Monoambientes de 35–40 m² y departamentos de 2 ambientes de 50–60 m² con orientación norte.', tag: 'Residencial' },
-    { nivel: 'Piso 2', desc: 'Unidades funcionales tipo A y B. Continuación del módulo residencial con variaciones de planta según geometría del lote.', tag: 'Residencial' },
-    { nivel: 'Piso 3', desc: 'Unidades de 2 y 3 ambientes (75–90 m²). Mayor superficie por retranqueo reglamentario. Expansiones hacia frente Charlone.', tag: 'Residencial' },
+    { nivel: 'Piso 2', desc: 'Unidades funcionales de 1 y 2 dormitorios. Continuación del módulo residencial con variaciones de planta según geometría del lote.', tag: 'Residencial' },
+    { nivel: 'Piso 3', desc: 'Unidades de 3 dormitorios (100–130 m²). Mayor superficie. Expansiones independientes.', tag: 'Residencial' },
     { nivel: 'Piso 4 / Terraza', desc: 'Nivel superior con unidades premium y terraza comunitaria. Volumetría estricta de 14.60 m optimizada para unidades funcionales.', tag: 'Culmine' },
   ];
 
   const tipologias = [
     { tipo: 'Monoambiente', sup: '35–40 m²', uni: 4, pct: 31 },
-    { tipo: '2 Ambientes', sup: '50–60 m²', uni: 6, pct: 46 },
-    { tipo: '3 Ambientes', sup: '75–90 m²', uni: 3, pct: 23 },
+    { tipo: '1 Dormitorios', sup: '50–60 m²', uni: 12, pct: 46 },
+    { tipo: '2 Dormitorios', sup: '75–90 m²', uni: 8, pct: 23 },
+    { tipo: '3 Dormitorios', sup: '100–130 m²', uni: 3, pct: 23 }
   ];
 
   const mercado = [
@@ -31,8 +32,8 @@ export default function Home() {
 
   const galeria = [
     { src: '/imagenes/patio-gastronomico.jpg', label: 'Patio Gastronómico', desc: 'Atrio interior · Planta Baja' },
-    { src: '/imagenes/rooftop.jpg', label: 'Rooftop', desc: 'Terraza comunitaria · Piso 4' },
-    { src: '/imagenes/rooftop1.jpg', label: 'Rooftop · Vista ciudad', desc: 'Skyline de Buenos Aires' },
+    { src: '/imagenes/rooftop.jpg', label: 'Terraza', desc: 'Rooftop comunitaria · Piso 4' },
+    { src: '/imagenes/rooftop1.jpg', label: 'Terraza · Vista ciudad ', desc: 'Cielo de Buenos Aires' },
     { src: '/imagenes/contemplativo.png', label: 'Patio Contemplativo', desc: 'Techo verde · Subsuelo' },
   ];
 
@@ -45,7 +46,7 @@ export default function Home() {
           <div>
             <h1 className="text-2xl tracking-[0.3em] font-light">cH°a</h1>
             <p className="text-xs uppercase tracking-widest text-[#8a7d6b]" style={{ fontFamily: 'sans-serif' }}>
-              Proyecto Final · Tecnicatura
+              Tesis · Proyecto y Construcción de Obras
             </p>
           </div>
           <nav className="hidden md:flex gap-8 text-xs uppercase tracking-widest text-[#8a7d6b]" style={{ fontFamily: 'sans-serif' }}>
@@ -109,7 +110,7 @@ export default function Home() {
           <div>
             <p className="uppercase tracking-widest text-xs text-[#8a7d6b] mb-6" style={{ fontFamily: 'sans-serif' }}>01 · Proyecto</p>
             <h3 className="text-4xl md:text-5xl font-light leading-tight mb-8">
-              Arquitectura de autor<br />con lógica residencial<br />contemporánea
+              Arquitectura con logica residencial <br />Staci e Urquiza <br />Catedra Benitez
             </h3>
             <div className="w-16 h-px bg-[#c8bfb0] mb-8" />
             <p className="text-[#5a5248] text-sm uppercase tracking-widest" style={{ fontFamily: 'sans-serif' }}>
@@ -119,12 +120,11 @@ export default function Home() {
           <div className="space-y-6 text-[#4a4238] leading-relaxed text-lg pt-4">
             <p>
               <em>cH°a</em> surge como un edificio residencial emplazado en Chacarita,
-              integrando una mirada técnica con una búsqueda espacial ligada al recorrido,
-              la contemplación y la permanencia material.
+              buscando un equilibrio entre la funcionalidad y la espacialidad.
             </p>
             <p>
-              El nombre del proyecto articula el hormigón armado con la identidad del autor,
-              proponiendo una arquitectura tectónica, silenciosa y precisa donde la estructura
+              El nombre del proyecto articula el hormigón armado con el nombre del barrio y de la calle. El autor,
+              propone una arquitectura tectónica, silenciosa y precisa donde la estructura
               y la atmósfera toman protagonismo.
             </p>
             <p>
@@ -132,7 +132,7 @@ export default function Home() {
               es constante: esas sensaciones que se obtienen recorriendo lo natural y también la arquitectura.
             </p>
             <div className="grid grid-cols-3 gap-4 pt-4">
-              {[['60%', 'Tectónico'], ['40%', 'Contemplativo'], ['13', 'Unidades']].map(([n, l]) => (
+              {[['Brutal'], ['Contemplativo'], ['8', 'Unidades']].map(([n, l]) => (
                 <div key={l} className="border border-[#c8bfb0] rounded-2xl p-5 text-center bg-white/70 backdrop-blur-sm">
                   <div className="text-3xl font-light mb-1">{n}</div>
                   <div className="text-xs uppercase tracking-widest text-[#8a7d6b]" style={{ fontFamily: 'sans-serif' }}>{l}</div>
@@ -150,7 +150,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-16 items-start mb-12">
             <div>
               <h3 className="text-4xl md:text-5xl font-light leading-tight mb-8">
-                Chacarita como tejido<br />emergente
+                Chacarita <br />emerge como el nuevo punto de desarrollo residencial<br />en la ciudad de Buenos Aires
               </h3>
               <div className="w-16 h-px bg-[#3a3530] mb-8" />
               <div className="space-y-5 text-[#a89f90] leading-relaxed">
@@ -163,7 +163,7 @@ export default function Home() {
               {[
                 { titulo: 'Conectividad Estratégica', desc: 'Subte B / Tren Urquiza. Acceso directo al centro metropolitano.' },
                 { titulo: 'Consolidación Comercial', desc: 'Av. Dorrego como eje comercial en crecimiento sostenido.' },
-                { titulo: 'Polo Gastronómico', desc: 'Boom gastronómico y lifestyle que consolida identidad barrial.' },
+                { titulo: 'Punto de interes Gastronomico', desc: 'Boom gastronómico y lifestyle que consolida identidad barrial.' },
                 { titulo: 'Baja Densidad', desc: 'Tejido de oportunidad: pocos edificios en altura, normativa favorable.' },
               ].map((item) => (
                 <div key={item.titulo} className="border border-[#2e2b26] rounded-2xl p-6">
@@ -255,7 +255,7 @@ export default function Home() {
           <h3 className="text-4xl md:text-5xl font-light leading-tight mb-16">Distribución de superficies</h3>
           <div className="grid md:grid-cols-2 gap-16 items-start">
             <div className="space-y-6">
-              <h4 className="text-xl font-light text-[#a89f90] mb-8">Tipologías propuestas — 13 unidades</h4>
+              <h4 className="text-xl font-light text-[#a89f90] mb-8">Tipologías propuestas — 8 Unidades por piso</h4>
               {tipologias.map((t) => (
                 <div key={t.tipo} className="space-y-2">
                   <div className="flex justify-between text-sm">
@@ -292,10 +292,11 @@ export default function Home() {
                 <h4 className="text-lg font-light text-[#a89f90]">Programa planta baja</h4>
                 {[
                   ['Gym', '150 m²', 'Local con acceso independiente'],
-                  ['Local gastronómico', '150 m²', 'En esquina · activación urbana'],
+                  ['Local/es gastronómicos', '200 m²', 'En esquina · activación urbana'],
                   ['Coworking', '55 m²', 'Espacio de trabajo compartido'],
                   ['Patio / Amenities', '200–250 m²', 'Espacios exteriores contemplativos'],
                   ['Ingreso peatonal', '—', 'Fusionado con amenities'],
+                  ['Acceso vehicular', '—', 'Subsuelo con pisada total del lote'],
                 ].map(([n, s, d]) => (
                   <div key={n} className="flex justify-between items-start border-b border-[#2e2b26] pb-3 gap-4">
                     <div>
@@ -341,8 +342,8 @@ export default function Home() {
           <div className="space-y-5">
             <h4 className="text-xl font-light mb-8 text-[#4a4238]">El plano de oportunidad</h4>
             {[
-              { titulo: 'Barrera de Entrada', valor: 'USD 2.137/m²', desc: 'Ticket competitivo vs. los >USD 3.000 de Palermo y Colegiales.' },
-              { titulo: 'Rentabilidad Bruta', valor: '5.0%', desc: 'Vs. 4.3% de Palermo. Menor capital inicial + mayor tasa bruta.' },
+              { titulo: 'Entrada', valor: 'USD 2.137/m²', desc: 'Ticket competitivo vs. los >USD 3.000 de Palermo y Colegiales.' },
+              { titulo: 'Rentabilidad', valor: '5.0%', desc: 'Vs. 4.3% de Palermo. Menor capital inicial + mayor tasa bruta.' },
               { titulo: 'Terreno', valor: 'USD 275.000', desc: 'Charlone 1116 · 200 m² base · volumen constructivo maximizado.' },
               { titulo: 'Sector en expansión', valor: '15–20%', desc: 'De la actividad proyectada para 2026 en Chacarita y zonas aledañas.' },
             ].map((k) => (
