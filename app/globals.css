@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg:         #0E0C0A;
+  --bg2:        #141210;
+  --bg3:        #1A1714;
+  --border:     rgba(255,255,255,0.09);
+  --text:       #F5EFE6;
+  --text-dim:   #C8B99A;
+  --text-mid:   #E0D4C0;
+  --bronze:     #B8884E;
+  --bronze-lt:  #D4A96A;
+  --bronze-dim: rgba(180,136,78,0.18);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  --font-serif:  var(--font-fraunces), Georgia, serif;
+  --font-body:   var(--font-jakarta), system-ui, sans-serif;
+  --font-label:  var(--font-space), system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-jakarta), system-ui, sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-fraunces), Georgia, serif;
+}
+
+.bronze-line {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--bronze), transparent);
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--bronze); border-radius: 2px; }
